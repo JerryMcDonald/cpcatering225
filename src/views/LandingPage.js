@@ -6,7 +6,7 @@ import React from "react";
 // } from "reactstrap";
 
 // Core Components
-import Navbar from "components/navbars/DemoNavbar.js";
+import MainNavbar from "../components/navbar/MainNavbar.js";
 
 function LandingPage() {
   React.useEffect(() => {
@@ -19,8 +19,9 @@ function LandingPage() {
   });
   return (
     <>
-      <Navbar />
+      <MainNavbar />
       <div className="wrapper">
+        <p>Hello</p>
       </div>
     </>
   );
