@@ -6,6 +6,8 @@ import "./assets/css/nucleo-svg.css";
 import "./assets/css/nucleo-icons.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "./assets/scss/argon-design-system.scss?v1.0.0";
+import "./assets/css/ccp.css";
+
 
 import LandingPage from "../src/views/LandingPage.js";
 
