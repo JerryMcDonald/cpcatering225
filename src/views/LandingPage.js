@@ -7,6 +7,8 @@ import React from "react";
 
 // Core Components
 import MainNavbar from "../components/navbar/MainNavbar.js";
+import HeaderPresentation from "../components/header/HeaderPresentation.js";
+
 
 function LandingPage() {
   React.useEffect(() => {
@@ -20,7 +22,8 @@ function LandingPage() {
   return (
     <>
       <MainNavbar />
-      <div className="wrapper">
+      <HeaderPresentation />
+      <div className="wrapper" type="primary">
         <p>Hello</p>
       </div>
     </>
