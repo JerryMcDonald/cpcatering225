@@ -4,6 +4,9 @@ import PropTypes from "prop-types";
 // JavaScript plugin that hides or shows a component based on your scroll
 import Headroom from "headroom.js";
 // reactstrap components
+import "../../assets/css/ccp.css";
+// import "../../assets/scss/custom/_styles.scss"
+
 import {
   Collapse,
   DropdownMenu,
@@ -19,6 +22,10 @@ import {
   Row,
   Col,
 } from "reactstrap";
+
+import logo from "../../assets/img/logo/cpcatering225.logo.png";
+import white from "../../assets/img/logo/white.png";
+import test from "../../assets/img/logo/test-6.png";
 
 function MainNavbar(props) {
   const [collapseOpen, toggleCollapse] = React.useState(false);
@@ -51,11 +58,12 @@ function MainNavbar(props) {
         className={"navbar-main headroom " + navbarType}
         expand="lg"
         id="dark-navbar-main"
+        color="ccp"
       >
         <Container>
-          <NavbarBrand className="mr-lg-5" to="/index" tag={Link}>
-            <img alt="..." src={require("../../assets/img/logo/white.png")}></img>
+          <NavbarBrand to="/index" tag={Link}>
           </NavbarBrand>
+            <img alt="..." className="logoMain" src={test}></img>
           <button
             className="navbar-toggler"
             type="button"
@@ -94,6 +102,7 @@ function MainNavbar(props) {
               className="navbar-nav-hover align-items-lg-center ml-lg-auto"
               navbar
             >
+
               <UncontrolledDropdown nav>
                 <DropdownToggle
                   data-toggle="dropdown"
@@ -103,7 +112,7 @@ function MainNavbar(props) {
                   tag={NavLink}
                 >
                   <i className="ni ni-ui-04 d-lg-none"></i>
-                  <span className="nav-link-inner--text">Elements</span>
+                  <span className="nav-link-inner--text">Services</span>
                 </DropdownToggle>
                 <DropdownMenu className="dropdown-menu-xl">
                   <div className="dropdown-menu-inner">
@@ -166,7 +175,8 @@ function MainNavbar(props) {
                   role="button"
                 >
                   <i className="ni ni-app d-lg-none"></i>
-                  <span className="nav-link-inner--text">Design Blocks</span>
+                  {/* Second Button ------------------------- */}
+                  <span className="nav-link-inner--text">Menu</span>
                 </DropdownToggle>
                 <DropdownMenu aria-labelledby="navbarDropdownMenuLink">
                   <DropdownItem tag={Link} to="/sections#headers">
@@ -220,7 +230,8 @@ function MainNavbar(props) {
                   role="button"
                 >
                   <i className="ni ni-single-copy-04 d-lg-none"></i>
-                  <span className="nav-link-inner--text">Examples</span>
+                  {/* Third Button ------------------------ */}
+                  <span className="nav-link-inner--text">About</span>
                 </DropdownToggle>
                 <DropdownMenu aria-labelledby="navbarDropdownMenuLink">
                   <DropdownItem to="/about-us" tag={Link}>
@@ -278,7 +289,7 @@ function MainNavbar(props) {
                   role="button"
                 >
                   <i className="ni ni-tablet-button d-lg-none"></i>
-                  <span className="nav-link-inner--text">App Pages</span>
+                  <span className="nav-link-inner--text">Contact</span>
                 </DropdownToggle>
                 <DropdownMenu aria-labelledby="navbarDropdownMenuLink">
                   <DropdownItem to="/account-settings" tag={Link}>
