@@ -2,11 +2,11 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 
-import "./assets/css/nucleo-svg.css";
-import "./assets/css/nucleo-icons.css";
-import "@fortawesome/fontawesome-free/css/all.min.css";
-import "./assets/scss/argon-design-system.scss?v1.0.0";
-import "./assets/css/ccp.css";
+import "../src/assets/css/bootstrap.min.css";
+import "../src/assets/scss/now-ui-kit.scss?v=1.4.0";
+import "../src/assets/demo/demo.css?v=1.4.0";
+import "../src/assets/demo/react-demo.css?v=1.4.0";
+import "../src/assets/demo/nucleo-icons-page-styles.css?v=1.4.0";
 
 
 import LandingPage from "../src/views/LandingPage.js";
