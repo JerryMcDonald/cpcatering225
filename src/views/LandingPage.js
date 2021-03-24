@@ -6,7 +6,8 @@ import React from "react";
 // } from "reactstrap";
 
 // Core Components
-import MainNavbar from "../components/navbar/MainNavbar.js";
+import ScrollTransparentNavbar from "../components/navbar/ScrollTransparentNavbar.js";
+
 import HeaderPresentation from "../components/header/HeaderPresentation.js";
 
 
@@ -21,7 +22,7 @@ function LandingPage() {
   });
   return (
     <>
-      <MainNavbar />
+      <ScrollTransparentNavbar />
       <HeaderPresentation />
       <div className="wrapper" type="primary">
         <p>Hello</p>
