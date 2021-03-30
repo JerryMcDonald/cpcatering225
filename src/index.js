@@ -14,8 +14,8 @@ import LandingPage from "../src/views/LandingPage.js";
 ReactDOM.render(
   <BrowserRouter>
     <Switch>
-      <Route path="/test" exact render={(props) => <LandingPage {...props} />} />
-      <Redirect to="/test" />
+      <Route path="/" exact render={(props) => <LandingPage {...props} />} />
+      <Redirect to="/" />
     </Switch>
   </BrowserRouter>,
   document.getElementById("root")
