@@ -125,9 +125,10 @@ function ScrollTransparentNavbar() {
               </UncontrolledDropdown>
               <UncontrolledDropdown nav>
                 <NavItem
+                  to="/about"
                   caret
-                  href="#pablo"
-                  onClick={(e) => e.preventDefault()}
+                  href="/about"
+                  // onClick={(e) => e.preventDefault()}
                   role="button"
                   tag={NavLink}
                 >
