@@ -10,11 +10,13 @@ import "../src/assets/demo/nucleo-icons-page-styles.css?v=1.4.0";
 
 
 import LandingPage from "../src/views/LandingPage.js";
+import AboutPage from"../src/views/AboutPage.js";
 
 ReactDOM.render(
   <BrowserRouter>
     <Switch>
       <Route path="/" exact render={(props) => <LandingPage {...props} />} />
+      <Route path="/about" exact render={(props) => <AboutPage {...props} />} />
       <Redirect to="/" />
     </Switch>
   </BrowserRouter>,
