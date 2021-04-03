@@ -25,6 +25,8 @@ function ServicesPage() {
   return (
     <>
       <ScrollTransparentNavbar />
+                  {/* // change the services page header */}
+
       <LandingPageHeader />
       <div className="wrapper" type="primary">
         <p>This is the services page</p>
