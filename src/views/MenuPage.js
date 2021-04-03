@@ -15,6 +15,7 @@ function MenuPage() {
   return (
     <>
       <ScrollTransparentNavbar />
+      {/* // change the menu page header */}
       <LandingPageHeader />
       <div className="wrapper" type="primary">
         <p>This is the Menu page</p>
