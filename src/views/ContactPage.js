@@ -19,7 +19,12 @@ function ContactPage() {
       <ScrollTransparentNavbar />
             {/* // change the landing page header */}
 
-      <LandingPageHeader />
+      {/* <LandingPageHeader /> */}
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
       <div className="wrapper" type="primary">
         <p>This is the Contact page</p>
       </div>

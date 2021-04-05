@@ -17,8 +17,15 @@ function AboutPage() {
   return (
     <>
       <ScrollTransparentNavbar />
-      <LandingPageHeader />
-      <div className="wrapper" type="primary">
+      {/* <LandingPageHeader /> */}
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+
+      <div 
+      className="wrapper" type="primary">
         <p>This is the About page</p>
       </div>
     </>
