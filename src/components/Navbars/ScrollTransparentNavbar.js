@@ -107,10 +107,10 @@ function ScrollTransparentNavbar() {
                   role="button"
                   tag={NavLink}
                 >
-                  <span className="">Services</span>
+                  <span className="">Services/Menu</span>
                 </NavItem>
               </UncontrolledDropdown>
-              <UncontrolledDropdown nav>
+              {/* <UncontrolledDropdown nav>
                 <NavItem
                   caret
                   href="/menu"
@@ -119,7 +119,7 @@ function ScrollTransparentNavbar() {
                 >
                   <span className="">Menu</span>
                 </NavItem>
-              </UncontrolledDropdown>
+              </UncontrolledDropdown> */}
               <UncontrolledDropdown nav>
                 <NavItem
                    caret
@@ -145,7 +145,7 @@ function ScrollTransparentNavbar() {
                     <NavItem>
                       <NavLink
                         href="#pablo"
-                        onClick={(e) => e.preventDefault()}
+                        onClick={(e) => alert("Possible facebook link")}
                       >
                         <i className="fab fa-facebook-square"></i>
                       </NavLink>
@@ -153,7 +153,7 @@ function ScrollTransparentNavbar() {
                     <NavItem>
                       <NavLink
                         href="#pablo"
-                        onClick={(e) => e.preventDefault()}
+                        onClick={(e) => alert("Possible twitter link")}
                       >
                         <i className="fab fa-twitter"></i>
                       </NavLink>
@@ -161,7 +161,7 @@ function ScrollTransparentNavbar() {
                     <NavItem>
                       <NavLink
                         href="#pablo"
-                        onClick={(e) => e.preventDefault()}
+                        onClick={(e) => alert("Possible google plus link")}
                       >
                         <i className="fab fa-google-plus"></i>
                       </NavLink>
@@ -169,7 +169,7 @@ function ScrollTransparentNavbar() {
                     <NavItem>
                       <NavLink
                         href="#pablo"
-                        onClick={(e) => e.preventDefault()}
+                        onClick={(e) => alert("Possible instagram link")}
                       >
                         <i className="fab fa-instagram"></i>
                       </NavLink>
