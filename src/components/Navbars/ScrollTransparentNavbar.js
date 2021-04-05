@@ -93,8 +93,7 @@ function ScrollTransparentNavbar() {
               <UncontrolledDropdown  nav>
                 <NavItem
                   caret
-                  href="#pablo"
-                  onClick={(e) => e.preventDefault()}
+                  href="/"
                   role="button"
                   tag={NavLink}
                 >
@@ -104,8 +103,7 @@ function ScrollTransparentNavbar() {
               <UncontrolledDropdown nav>
                 <NavItem
                   caret
-                  href="#pablo"
-                  onClick={(e) => e.preventDefault()}
+                  href="/services"
                   role="button"
                   tag={NavLink}
                 >
@@ -115,22 +113,19 @@ function ScrollTransparentNavbar() {
               <UncontrolledDropdown nav>
                 <NavItem
                   caret
-                  href="#pablo"
-                  onClick={(e) => e.preventDefault()}
+                  href="/menu"
                   role="button"
                   tag={NavLink}
                 >
-                  <span className="">Menus</span>
+                  <span className="">Menu</span>
                 </NavItem>
               </UncontrolledDropdown>
               <UncontrolledDropdown nav>
                 <NavItem
-                  to="/about"
-                  caret
-                  href="/about"
-                  // onClick={(e) => e.preventDefault()}
-                  role="button"
-                  tag={NavLink}
+                   caret
+                   href="/About"
+                   role="button"
+                   tag={NavLink}
                 >
                   <span className="">About</span>
                 </NavItem>
@@ -138,8 +133,7 @@ function ScrollTransparentNavbar() {
               <UncontrolledDropdown style={{marginRight:"100px"}} nav>
                 <NavItem
                   caret
-                  href="#pablo"
-                  onClick={(e) => e.preventDefault()}
+                  href="/contact"
                   role="button"
                   tag={NavLink}
                 >
