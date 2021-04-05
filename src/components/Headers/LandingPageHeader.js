@@ -3,6 +3,7 @@ import React from "react";
 // reactstrap components
 import { Button, Container } from "reactstrap";
 
+
 // core components
 
 function LandingPageHeader() {
@@ -26,39 +27,14 @@ function LandingPageHeader() {
         <div
           className="page-header-image"
           style={{
-            backgroundImage: "url(" + require("assets/img/ccpImages/cppCatering3.jpg") + ")",
+            backgroundImage: "url(" + require("assets/img/cpcImages/cpCatering3.jpg") + ")",
           }}
           ref={pageHeader}
         ></div>
         <div className="content-center">
           <Container>
             <h1 className="title">CPCatering</h1>
-            <div className="text-center">
-              <Button
-                className="btn-icon btn-round mr-1"
-                color="info"
-                href="#pablo"
-                onClick={(e) => e.preventDefault()}
-              >
-                <i className="fab fa-facebook-square"></i>
-              </Button>
-              <Button
-                className="btn-icon btn-round mr-1"
-                color="info"
-                href="#pablo"
-                onClick={(e) => e.preventDefault()}
-              >
-                <i className="fab fa-twitter"></i>
-              </Button>
-              <Button
-                className="btn-icon btn-round"
-                color="info"
-                href="#pablo"
-                onClick={(e) => e.preventDefault()}
-              >
-                <i className="fab fa-google-plus"></i>
-              </Button>
-            </div>
+            
           </Container>
         </div>
       </div>
