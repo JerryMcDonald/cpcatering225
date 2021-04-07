@@ -2,6 +2,7 @@ import React from "react";
 
 // reactstrap components
 import { Button, Container } from "reactstrap";
+import logo from "../../assets/img/logo/NavLogoCPP.png"
 
 
 // core components
@@ -33,8 +34,8 @@ function LandingPageHeader() {
         ></div>
         <div className="content-center">
           <Container>
-            <h1 className="title">CPCatering</h1>
-            
+            <h1 className="title" style={{"font-family": "Brush Script MT"}}>CPCatering</h1>
+            <img src={logo} ></img>
           </Container>
         </div>
       </div>
