@@ -35,7 +35,7 @@ function LandingPageHeader() {
         <div className="content-center">
           <Container>
             <h1 className="title" style={{"font-family": "Brush Script MT"}}>CPCatering</h1>
-            <img src={logo} ></img>
+            {/* <img src={logo} ></img> */}
           </Container>
         </div>
       </div>
