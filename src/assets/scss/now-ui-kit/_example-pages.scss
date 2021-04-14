@@ -182,7 +182,9 @@
     }
 }
 
-.landing-page{
+
+.landing-page, 
+.contact-page{
 
     .page-header{
         height: 100vh;
@@ -231,6 +233,12 @@
         a.btn{
             margin-top: 35px;
         }
+    }
+}
+
+.contact-page{
+    .page-header{
+        height: 70vh;
     }
 }
 
