@@ -102,8 +102,10 @@
     .navbar-brand{
         text-transform: uppercase;
         font-size: $font-size-small;
-        padding-top: $padding-base-vertical;
-        padding-bottom: $padding-base-vertical;
+        // make nav-bar a little shorter
+        // padding-top: $padding-base-vertical;
+        // padding-bottom: $padding-base-vertical;
+        padding: 0px;
         line-height: $line-height-nav-link;
     }
 
