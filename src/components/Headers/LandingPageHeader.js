@@ -1,8 +1,8 @@
 import React from "react";
 
 // reactstrap components
-import { Button, Container } from "reactstrap";
-import logo from "../../assets/img/logo/NavLogoCPP.png"
+import { Container } from "reactstrap";
+
 
 
 // core components
