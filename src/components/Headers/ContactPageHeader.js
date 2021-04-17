@@ -1,10 +1,5 @@
 import React from "react";
 
-// reactstrap components
-import { Button, Container } from "reactstrap";
-import logo from "../../assets/img/logo/NavLogoCPP.png"
-
-
 // core components
 
 function ContactPageHeader() {
