@@ -37,7 +37,9 @@ function ContactPage() {
 
   function sendEmail(e) {
     e.preventDefault();
+    e.target.reset();
 
+    console.log(e);
     emailjs
       .sendForm(
         "service_3jfn8sr",
@@ -72,7 +74,7 @@ function ContactPage() {
                   get in touch with you as soon as possible. <br></br>
                   <br></br>
                 </p>
-                <Form id="contact-form" method="post" role="form">
+                <Form id="contact-form" onSubmit={sendEmail} role="form">
                   <label>Your name</label>
                   <InputGroup className={nameFocus ? "input-group-focus" : ""}>
                     <InputGroupAddon addonType="prepend">
@@ -81,6 +83,7 @@ function ContactPage() {
                       </InputGroupText>
                     </InputGroupAddon>
                     <Input
+                      name="from_name"
                       aria-label="Your Name..."
                       autoComplete="name"
                       placeholder="Your Name..."
@@ -97,6 +100,7 @@ function ContactPage() {
                       </InputGroupText>
                     </InputGroupAddon>
                     <Input
+                      name="user_email"
                       aria-label="Email Here..."
                       autoComplete="email"
                       placeholder="Email Here..."
@@ -105,7 +109,7 @@ function ContactPage() {
                       onBlur={() => setEmailFocus(false)}
                     ></Input>
                   </InputGroup>
-                  <label>Phone</label>
+                  <label>Phone (optional)</label>
                   <InputGroup
                     className={numberFocus ? "input-group-focus" : ""}
                   >
@@ -115,7 +119,7 @@ function ContactPage() {
                       </InputGroupText>
                     </InputGroupAddon>
                     <Input
-                      autoComplete="number"
+                      name="contact_number"
                       placeholder="Number Here..."
                       type="text"
                       onFocus={() => setNumberFocus(true)}
@@ -168,19 +172,6 @@ function ContactPage() {
       <br />
       <br />
       <br />
-      <div className="wrapper" type="primary">
-        <p>This is the Contact page</p>
-        <form className="contact-form" onSubmit={sendEmail}>
-          <input type="hidden" name="contact_number" />
-          <label>Name</label>
-          <input type="text" name="user_name" />
-          <label>Email</label>
-          <input type="email" name="user_email" />
-          <label>Message</label>
-          <textarea name="message" />
-          <input type="submit" value="Send" />
-        </form>
-      </div>
       <br />
       <br />
       <br />
