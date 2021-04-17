@@ -2,20 +2,14 @@ import React from "react";
 import { Link } from "react-router-dom";
 // reactstrap components
 import {
-  Button,
   Collapse,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
   UncontrolledDropdown,
-  UncontrolledCollapse,
   NavbarBrand,
   Navbar,
   NavItem,
   NavLink,
   Nav,
   Container,
-  UncontrolledTooltip,
 } from "reactstrap";
 
 //css
@@ -92,7 +86,7 @@ function ScrollTransparentNavbar() {
             <Nav className="ml-auto" id="ceva" navbar>
               <UncontrolledDropdown  nav>
                 <NavItem
-                  caret
+                  caret="true"
                   href="/"
                   role="button"
                   tag={NavLink}
@@ -102,7 +96,7 @@ function ScrollTransparentNavbar() {
               </UncontrolledDropdown>
               <UncontrolledDropdown nav>
                 <NavItem
-                  caret
+                  caret="true"
                   href="/services"
                   role="button"
                   tag={NavLink}
@@ -122,8 +116,8 @@ function ScrollTransparentNavbar() {
               </UncontrolledDropdown> */}
               <UncontrolledDropdown nav>
                 <NavItem
-                   caret
-                   href="/About"
+                  caret="true"
+                  href="/About"
                    role="button"
                    tag={NavLink}
                 >
@@ -132,7 +126,7 @@ function ScrollTransparentNavbar() {
               </UncontrolledDropdown>
               <UncontrolledDropdown style={{marginRight:"100px"}} nav>
                 <NavItem
-                  caret
+                  caret="true"
                   href="/contact"
                   role="button"
                   tag={NavLink}
@@ -140,7 +134,7 @@ function ScrollTransparentNavbar() {
                   <span className="">Contact</span>
                 </NavItem>
               </UncontrolledDropdown>
-              <UncontrolledDropdown navbar toggler="#example-navbar-warning">
+              <UncontrolledDropdown toggler="#example-navbar-warning">
                   <Nav className="ml-auto" navbar>
                     <NavItem>
                       <NavLink
