@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import emailjs from "emailjs-com";
 
 import {
@@ -11,17 +11,20 @@ import {
   InputGroup,
   Container,
   Row,
-  Col,
+  Col, Modal, ModalHeader, ModalBody, ModalFooter,
 } from "reactstrap";
 
 import ScrollTransparentNavbar from "../components/Navbars/ScrollTransparentNavbar.js";
 
 import ContactPageHeader from "../components/Headers/ContactPageHeader.js";
+import FooterBlack from "../components/Footers/FooterBlack.js"; 
 
 function ContactPage() {
   const [nameFocus, setNameFocus] = React.useState(false);
   const [emailFocus, setEmailFocus] = React.useState(false);
   const [numberFocus, setNumberFocus] = React.useState(false);
+  const [modal, setModal] = useState(false);
+
 
   React.useEffect(() => {
     document.body.classList.add("contact-page");
@@ -38,6 +41,7 @@ function ContactPage() {
   function sendEmail(e) {
     e.preventDefault();
     e.target.reset();
+    setModal(!modal)
 
     console.log(e);
     emailjs
@@ -56,6 +60,10 @@ function ContactPage() {
         }
       );
   }
+
+  const toggle = () => setModal(!modal);
+
+  const closeBtn = <button className="close" onClick={toggle}>&times;</button>;
 
   return (
     <>
@@ -148,7 +156,7 @@ function ContactPage() {
                 </Form>
               </Col>
               <Col className="ml-auto mr-auto" md="5">
-                <div style={{paddingTop:"200px"}}   className="info info-horizontal">
+                <div style={{paddingTop:"100px"}}   className="info info-horizontal">
                   <div className="icon icon-info">
                     <i className="now-ui-icons tech_mobile"></i>
                   </div>
@@ -161,32 +169,32 @@ function ContactPage() {
                     </p>
                   </div>
                 </div>
+                <div   className="info info-horizontal">
+                  <div className="icon icon-info">
+                    <i className="now-ui-icons ui-1_email-85"></i>
+                  </div>
+                  <div className="description">
+                    <h4 className="info-title">Send us an email</h4>
+                    <p>
+                     cpcateringllc@gmail.com
+                    </p>
+                  </div>
+                </div>
               </Col>
             </Row>
           </Container>
         </div>
       </div>
-
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
+      <FooterBlack />
+      <Modal isOpen={modal} toggle={toggle} >
+      <ModalHeader toggle={toggle} close={closeBtn}>Message Sent</ModalHeader>
+      <ModalBody>
+        Thanks! We will get back to you as soon as we can!
+      </ModalBody>
+      <ModalFooter>
+        <Button color="secondary" onClick={toggle}>Close</Button>
+      </ModalFooter>
+    </Modal>
     </>
   );
 }
