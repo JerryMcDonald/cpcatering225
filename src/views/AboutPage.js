@@ -2,7 +2,7 @@ import React from "react";
 
 import ScrollTransparentNavbar from "../components/Navbars/ScrollTransparentNavbar.js";
 
-import LandingPageHeader from "../components/Headers/LandingPageHeader.js";
+import AboutPageHeader from "../components/Headers/AboutPageHeader.js";
 
 
 function AboutPage() {
@@ -17,7 +17,7 @@ function AboutPage() {
   return (
     <>
       <ScrollTransparentNavbar />
-      {/* <LandingPageHeader /> */}
+      <AboutPageHeader />
       <br/>
       <br/>
       <br/>
